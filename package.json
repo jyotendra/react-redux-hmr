@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "./node_modules/.bin/webpack-dev-server",
-    "build": "./node_modules/.bin/webpack --display-error-details"
+    "build": "./node_modules/.bin/webpack --config webpack.prod.js --display-error-details"
   },
   "dependencies": {
     "@types/react": "^16.0.18",
@@ -33,6 +33,7 @@
     "typescript": "2.5.3",
     "webpack": "3.8.1",
     "webpack-dev-server": "2.9.3",
-    "webpack-merge": "4.1.0"
+    "webpack-merge": "4.1.0",
+    "uglifyjs-webpack-plugin": "1.0.1"
   }
 }
