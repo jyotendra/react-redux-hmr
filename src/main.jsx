@@ -1,7 +1,13 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { AppContainer } from 'react-hot-loader'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { AppContainer } from 'react-hot-loader';
 import { App } from './App';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+
+
+// Create redux store
+let store = createStore(rootReducer);
 
 const render = Component => {
   ReactDOM.render(
